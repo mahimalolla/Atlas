@@ -1,0 +1,21 @@
+Company: Northstar Health
+Stage: Series B
+Sector: Healthcare SaaS
+
+Problem:
+Northstar Health wanted to introduce AI into customer support and clinical documentation workflows, but teams were experimenting independently without shared standards. Product, engineering, and operations each selected different tools, which created duplicate vendor spend and inconsistent data access patterns.
+
+Root Cause:
+The company had strong interest in AI but no clear ownership model. AI work was treated as side projects rather than a coordinated operating capability. No one owned vendor evaluation, data access patterns, model governance, or reusable infrastructure.
+
+Actions Taken:
+The company created a small AI enablement pod consisting of one senior engineer, one product manager, and one operations lead. The team was responsible for evaluating use cases, setting vendor standards, building shared APIs, and creating lightweight governance for sensitive data.
+
+Outcome:
+Within two quarters, the company reduced duplicate AI tooling, launched two production workflows, and improved customer support response time by 28 percent.
+
+Lesson:
+Companies should avoid hiring a large AI team too early. A small cross-functional enablement pod can validate use cases, centralize standards, and create reusable infrastructure before scaling headcount.
+
+Tags:
+AI adoption, operating model, enablement pod, governance, healthcare SaaS, Series B

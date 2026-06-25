@@ -1,0 +1,21 @@
+Company: MeridianOps
+Stage: Series C
+Sector: Vertical SaaS
+
+Problem:
+MeridianOps had rising customer support volume after rapid customer growth. The executive team considered hiring more support agents, but the support team believed many tickets were repetitive and could be automated.
+
+Root Cause:
+Support knowledge was spread across outdated help center articles, Slack messages, and individual agent notes. The company lacked a unified knowledge base that could support automation.
+
+Actions Taken:
+The company built an AI support assistant trained on approved documentation and historical resolved tickets. Before deploying externally, the assistant was used internally by support agents to draft responses and identify gaps in documentation.
+
+Outcome:
+The internal assistant reduced average first-response time by 35 percent and helped identify 42 missing or outdated help center articles. The company delayed external launch until the documentation base was improved.
+
+Lesson:
+AI support automation works best when introduced as an internal agent-assist workflow before customer-facing deployment. The best first milestone is better internal productivity and cleaner knowledge, not full automation.
+
+Tags:
+customer support, AI agent assist, documentation quality, internal rollout, vertical SaaS, Series C

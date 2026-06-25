@@ -1,0 +1,21 @@
+Company: TerraStack
+Stage: Series C
+Sector: Infrastructure Software
+
+Problem:
+TerraStack had three machine learning pilots but no reliable path to production. Models were trained in notebooks, monitoring was inconsistent, and engineering teams disagreed on who owned deployment.
+
+Root Cause:
+The company treated ML as experimentation rather than a production software capability. There was no shared model registry, evaluation process, or deployment ownership model.
+
+Actions Taken:
+The AI working group created a lightweight MLOps standard. The first version included a shared model registry, evaluation checklist, model owner assignment, rollback plan, and observability dashboard for latency, cost, and quality metrics.
+
+Outcome:
+Two models moved from pilot to production within one quarter. The company avoided building a large platform team and instead standardized the minimum process needed for safe deployment.
+
+Lesson:
+MLOps maturity should match the number and criticality of models in production. Early-stage teams should standardize evaluation, ownership, and monitoring before investing in a heavy internal platform.
+
+Tags:
+MLOps, production AI, model deployment, observability, infrastructure software, Series C

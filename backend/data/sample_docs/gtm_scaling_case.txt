@@ -1,0 +1,21 @@
+Company: BrightLedger
+Stage: Series B
+Sector: Fintech SaaS
+
+Problem:
+BrightLedger had strong product usage among early customers but inconsistent sales execution. Account executives created their own messaging, qualification criteria varied by rep, and the CEO was involved in too many late-stage deals.
+
+Root Cause:
+The company had product-market fit signals but lacked a repeatable go-to-market motion. Sales knowledge existed in individual reps' calls and founder conversations, but it had not been converted into a shared playbook.
+
+Actions Taken:
+The operating team helped the company analyze recent closed-won and closed-lost deals. They identified three customer segments with the fastest sales cycles and created a qualification checklist, objection-handling guide, and deal review cadence.
+
+Outcome:
+Sales cycle time decreased by 18 percent over the following quarter, and new reps ramped faster because they had a clearer definition of the ideal customer profile.
+
+Lesson:
+Before adding sales headcount, growth-stage companies should convert founder-led sales knowledge into a repeatable playbook. Scaling headcount without a defined motion amplifies inconsistency.
+
+Tags:
+GTM, sales playbook, founder-led sales, ICP, Series B, fintech SaaS

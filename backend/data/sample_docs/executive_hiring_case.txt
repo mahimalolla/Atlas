@@ -1,0 +1,21 @@
+Company: ScaleForge
+Stage: Series C
+Sector: Developer Tools
+
+Problem:
+ScaleForge needed to hire a VP of Engineering after engineering headcount grew from 18 to 75 employees. The founding CTO was still approving architecture decisions and managing too many direct reports.
+
+Root Cause:
+The company had outgrown founder-led engineering management. Engineering execution slowed because decision-making remained centralized and managers did not have clear ownership of roadmap delivery.
+
+Actions Taken:
+The board helped define the VP Engineering profile around scaling engineering managers, improving delivery cadence, and creating architecture review processes. The search focused on candidates who had scaled teams from 50 to 200 engineers in infrastructure-heavy companies.
+
+Outcome:
+After the hire, engineering managers took ownership of roadmap execution and the CTO moved into a product and technical vision role. Release predictability improved over the next two quarters.
+
+Lesson:
+Executive hiring should be tied to the operating bottleneck, not just the title. For scaling engineering teams, the strongest profile depends on whether the bottleneck is people management, technical architecture, or product execution.
+
+Tags:
+executive search, VP Engineering, scaling teams, developer tools, Series C, operating bottleneck
