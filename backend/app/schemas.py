@@ -50,3 +50,8 @@ class CaseExtractionResponse(BaseModel):
 class PatternRequest(BaseModel):
     question: str = Field(..., min_length=3)
     top_k: Optional[int] = Field(default=5, ge=1, le=10)
+
+class PlaybookRequest(BaseModel):
+    question: str = Field(..., min_length=3)
+    top_k: Optional[int] = Field(default=5, ge=1, le=10)
+    

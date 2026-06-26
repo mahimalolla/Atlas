@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-
+from app.playbook import generate_operating_playbook
 from app.case_extraction import extract_all_cases
 from app.ingest import ingest_documents
 from app.retrieval import generate_answer, retrieve_context
@@ -10,6 +10,7 @@ from app.schemas import (
     QueryRequest,
     QueryResponse,
     PatternRequest,
+    PlaybookRequest,
 )
 
 app = FastAPI(
@@ -58,5 +59,12 @@ def extract_cases():
 def patterns(request: PatternRequest):
     try:
         return analyze_patterns(request.question, request.top_k or 5)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    
+@app.post("/playbook")
+def playbook(request: PlaybookRequest):
+    try:
+        return generate_operating_playbook(request.question, request.top_k or 5)
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
