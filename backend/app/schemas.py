@@ -24,3 +24,25 @@ class IngestResponse(BaseModel):
     status: str
     processed_docs: List[str]
     chunks_added: int
+
+
+class BusinessCase(BaseModel):
+    company: str
+    stage: str
+    sector: str
+    problem: str
+    root_cause: str
+    actions_taken: List[str]
+    outcome: str
+    lesson: str
+    tags: List[str]
+    source_file: str
+
+
+class CaseExtractionResponse(BaseModel):
+    status: str
+    documents_processed: int
+    cases_extracted: int
+    avg_tags_per_case: float
+    output_path: str
+    cases: List[BusinessCase]
