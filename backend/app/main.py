@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-
+from app.case_extraction import extract_all_cases
 from app.ingest import ingest_documents
 from app.retrieval import generate_answer, retrieve_context
 from app.schemas import IngestResponse, QueryRequest, QueryResponse
@@ -41,3 +41,11 @@ def query(request: QueryRequest):
         return {"question": request.question, "answer": answer, "sources": sources}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+@app.post("/extract-cases")
+def extract_cases():
+    """
+    Phase 2 endpoint:
+    Converts raw portfolio documents into structured operating cases.
+    """
+    return extract_all_cases()

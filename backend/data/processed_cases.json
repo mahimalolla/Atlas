@@ -1,0 +1,88 @@
+[
+  {
+    "company": "Northstar Health",
+    "stage": "Series B",
+    "sector": "Healthcare SaaS",
+    "problem": "Northstar Health wanted to introduce AI into customer support and clinical documentation workflows, but teams were experimenting independently without shared standards. Product, engineering, and operations each selected different tools, which created duplicate vendor spend and inconsistent data access patterns. ",
+    "root_cause": "The company had strong interest in AI but no clear ownership model. AI work was treated as side projects rather than a coordinated operating capability. No one owned vendor evaluation, data access patterns, model governance, or reusable infrastructure. ",
+    "actions_taken": "The company created a small AI enablement pod consisting of one senior engineer, one product manager, and one operations lead. The team was responsible for evaluating use cases, setting vendor standards, building shared APIs, and creating lightweight governance for sensitive data. ",
+    "outcome": "Within two quarters, the company reduced duplicate AI tooling, launched two production workflows, and improved customer support response time by 28 percent. ",
+    "lesson": "Companies should avoid hiring a large AI team too early. A small cross-functional enablement pod can validate use cases, centralize standards, and create reusable infrastructure before scaling headcount. Tags: AI adoption, operating model, enablement pod, governance, healthcare SaaS, Series B ",
+    "source_file": "ai_team_scaling_case.txt",
+    "tags": [
+      "AI adoption",
+      "Executive hiring",
+      "Support automation",
+      "Operating model",
+      "Team scaling"
+    ]
+  },
+  {
+    "company": "ScaleForge",
+    "stage": "Series C",
+    "sector": "Developer Tools",
+    "problem": "ScaleForge needed to hire a VP of Engineering after engineering headcount grew from 18 to 75 employees. The founding CTO was still approving architecture decisions and managing too many direct reports. ",
+    "root_cause": "The company had outgrown founder-led engineering management. Engineering execution slowed because decision-making remained centralized and managers did not have clear ownership of roadmap delivery. ",
+    "actions_taken": "The board helped define the VP Engineering profile around scaling engineering managers, improving delivery cadence, and creating architecture review processes. The search focused on candidates who had scaled teams from 50 to 200 engineers in infrastructure-heavy companies. ",
+    "outcome": "After the hire, engineering managers took ownership of roadmap execution and the CTO moved into a product and technical vision role. Release predictability improved over the next two quarters. ",
+    "lesson": "Executive hiring should be tied to the operating bottleneck, not just the title. For scaling engineering teams, the strongest profile depends on whether the bottleneck is people management, technical architecture, or product execution. Tags: executive search, VP Engineering, scaling teams, developer tools, Series C, operating bottleneck ",
+    "source_file": "executive_hiring_case.txt",
+    "tags": [
+      "AI adoption",
+      "Executive hiring",
+      "Operating model",
+      "Team scaling"
+    ]
+  },
+  {
+    "company": "BrightLedger",
+    "stage": "Series B",
+    "sector": "Fintech SaaS",
+    "problem": "BrightLedger had strong product usage among early customers but inconsistent sales execution. Account executives created their own messaging, qualification criteria varied by rep, and the CEO was involved in too many late-stage deals. ",
+    "root_cause": "The company had product-market fit signals but lacked a repeatable go-to-market motion. Sales knowledge existed in individual reps' calls and founder conversations, but it had not been converted into a shared playbook. ",
+    "actions_taken": "The operating team helped the company analyze recent closed-won and closed-lost deals. They identified three customer segments with the fastest sales cycles and created a qualification checklist, objection-handling guide, and deal review cadence. ",
+    "outcome": "Sales cycle time decreased by 18 percent over the following quarter, and new reps ramped faster because they had a clearer definition of the ideal customer profile. ",
+    "lesson": "Before adding sales headcount, growth-stage companies should convert founder-led sales knowledge into a repeatable playbook. Scaling headcount without a defined motion amplifies inconsistency. Tags: GTM, sales playbook, founder-led sales, ICP, Series B, fintech SaaS ",
+    "source_file": "gtm_scaling_case.txt",
+    "tags": [
+      "Executive hiring",
+      "GTM scaling",
+      "Team scaling"
+    ]
+  },
+  {
+    "company": "TerraStack",
+    "stage": "Series C",
+    "sector": "Infrastructure Software",
+    "problem": "TerraStack had three machine learning pilots but no reliable path to production. Models were trained in notebooks, monitoring was inconsistent, and engineering teams disagreed on who owned deployment. ",
+    "root_cause": "The company treated ML as experimentation rather than a production software capability. There was no shared model registry, evaluation process, or deployment ownership model. ",
+    "actions_taken": "The AI working group created a lightweight MLOps standard. The first version included a shared model registry, evaluation checklist, model owner assignment, rollback plan, and observability dashboard for latency, cost, and quality metrics. ",
+    "outcome": "Two models moved from pilot to production within one quarter. The company avoided building a large platform team and instead standardized the minimum process needed for safe deployment. ",
+    "lesson": "MLOps maturity should match the number and criticality of models in production. Early-stage teams should standardize evaluation, ownership, and monitoring before investing in a heavy internal platform. Tags: MLOps, production AI, model deployment, observability, infrastructure software, Series C ",
+    "source_file": "mlops_rollout_case.txt",
+    "tags": [
+      "AI adoption",
+      "MLOps",
+      "Operating model",
+      "Team scaling"
+    ]
+  },
+  {
+    "company": "MeridianOps",
+    "stage": "Series C",
+    "sector": "Vertical SaaS",
+    "problem": "MeridianOps had rising customer support volume after rapid customer growth. The executive team considered hiring more support agents, but the support team believed many tickets were repetitive and could be automated. ",
+    "root_cause": "Support knowledge was spread across outdated help center articles, Slack messages, and individual agent notes. The company lacked a unified knowledge base that could support automation. ",
+    "actions_taken": "The company built an AI support assistant trained on approved documentation and historical resolved tickets. Before deploying externally, the assistant was used internally by support agents to draft responses and identify gaps in documentation. ",
+    "outcome": "The internal assistant reduced average first-response time by 35 percent and helped identify 42 missing or outdated help center articles. The company delayed external launch until the documentation base was improved. ",
+    "lesson": "AI support automation works best when introduced as an internal agent-assist workflow before customer-facing deployment. The best first milestone is better internal productivity and cleaner knowledge, not full automation. Tags: customer support, AI agent assist, documentation quality, internal rollout, vertical SaaS, Series C ",
+    "source_file": "support_automation_case.txt",
+    "tags": [
+      "AI adoption",
+      "Executive hiring",
+      "Support automation",
+      "MLOps",
+      "Team scaling"
+    ]
+  }
+]

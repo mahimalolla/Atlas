@@ -1,9 +1,22 @@
+# Virtual Environment
+venv/
+backend/venv/
+
+# Environment variables
 .env
+backend/.env
+
+# Python
 __pycache__/
 *.pyc
-.venv/
-venv/
+*.pyo
+*.pyd
+
+# Chroma Database
 backend/data/chroma/
+
+# VS Code
+.vscode/
+
+# macOS
 .DS_Store
-node_modules/
-.next/
