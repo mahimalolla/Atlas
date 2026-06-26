@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #f4efe7;
+  --surface: #fffdf8;
+  --surface-strong: #ffffff;
+  --ink: #17324d;
+  --muted: #65717d;
+  --soft: #8b938d;
+  --border: #e5dccf;
+
+  --sage: #6f9475;
+  --sage-deep: #4f7658;
+  --sage-soft: #eaf2e9;
+
+  --gold: #c79a3b;
+  --gold-deep: #a97922;
+  --gold-soft: #fbf0d6;
+
+  --clay: #b66b4e;
+  --clay-soft: #f6e6df;
+
+  --navy-soft: #eaf0f5;
+  --paper: #fbf7ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(111, 148, 117, 0.22), transparent 26rem),
+    radial-gradient(circle at 92% 8%, rgba(199, 154, 59, 0.20), transparent 28rem),
+    radial-gradient(circle at 50% 105%, rgba(182, 107, 78, 0.12), transparent 30rem),
+    linear-gradient(180deg, #f8f3eb 0%, #f3eee6 46%, #eee7dc 100%);
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(23, 50, 77, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 50, 77, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(to bottom, black 0%, black 46%, transparent 92%);
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.35), transparent 38%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.035) 0px,
+      rgba(255,255,255,0.035) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(199, 154, 59, 0.28);
+}
+
+.atlas-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 34px 24px 80px;
+}
+
+.atlas-logo {
+  font-family: "DM Serif Display", Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.atlas-heading {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  letter-spacing: -0.045em;
+}
+
+.atlas-card {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.92), rgba(255, 250, 241, 0.84));
+  border: 1px solid rgba(229, 220, 207, 0.95);
+  border-radius: 24px;
+  box-shadow:
+    0 24px 70px rgba(23, 50, 77, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(14px);
+}
+
+.atlas-card:hover {
+  border-color: rgba(199, 154, 59, 0.34);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(23, 50, 77, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 50, 77, 0.05) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.premium-panel {
+  background:
+    radial-gradient(circle at top left, rgba(111, 148, 117, 0.10), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 249, 239, 0.9));
+}
+
+.gold-rule {
+  width: 42px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), rgba(199, 154, 59, 0.25));
+}
+
+.sage-pill {
+  background: linear-gradient(180deg, var(--sage-soft), #f5faf4);
+  color: var(--sage-deep);
+  border: 1px solid rgba(111, 148, 117, 0.18);
+}
+
+.gold-pill {
+  background: linear-gradient(180deg, var(--gold-soft), #fffaf0);
+  color: var(--gold-deep);
+  border: 1px solid rgba(199, 154, 59, 0.20);
+}
+
+.fade-up {
+  animation: fadeUp 420ms ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulseSoft 2.4s ease-in-out infinite;
+}
+
+.reveal-delay-1 {
+  animation-delay: 80ms;
+}
+
+.reveal-delay-2 {
+  animation-delay: 160ms;
+}
+
+.reveal-delay-3 {
+  animation-delay: 240ms;
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(199, 154, 59, 0.22);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(199, 154, 59, 0);
+  }
+}
+
+button,
+a,
+.atlas-card {
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+button:hover,
+a:hover {
+  transform: translateY(-1px);
+}
+
+.atlas-card:hover {
+  transform: translateY(-2px);
+}

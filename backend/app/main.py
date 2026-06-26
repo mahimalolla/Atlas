@@ -3,6 +3,7 @@ from app.playbook import generate_operating_playbook
 from app.case_extraction import extract_all_cases
 from app.ingest import ingest_documents
 from app.intelligence import atlas_intelligence
+from fastapi.middleware.cors import CORSMiddleware
 from app.retrieval import generate_answer, retrieve_context
 from app.pattern_engine import analyze_patterns
 from app.schemas import (
@@ -18,6 +19,16 @@ app = FastAPI(
     title="Atlas API",
     description="Institutional knowledge engine for portfolio-scale operating playbooks.",
     version="0.1.0",
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
