@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from app.playbook import generate_operating_playbook
 from app.case_extraction import extract_all_cases
 from app.ingest import ingest_documents
+from app.intelligence import atlas_intelligence
 from app.retrieval import generate_answer, retrieve_context
 from app.pattern_engine import analyze_patterns
 from app.schemas import (
@@ -68,3 +69,13 @@ def playbook(request: PlaybookRequest):
         return generate_operating_playbook(request.question, request.top_k or 5)
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+    
+@app.get("/intelligence")
+def intelligence():
+    try:
+        return atlas_intelligence()
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=str(exc)
+        )
