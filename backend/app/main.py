@@ -3,11 +3,13 @@ from fastapi import FastAPI, HTTPException
 from app.case_extraction import extract_all_cases
 from app.ingest import ingest_documents
 from app.retrieval import generate_answer, retrieve_context
+from app.pattern_engine import analyze_patterns
 from app.schemas import (
     CaseExtractionResponse,
     IngestResponse,
     QueryRequest,
     QueryResponse,
+    PatternRequest,
 )
 
 app = FastAPI(
@@ -51,3 +53,10 @@ def query(request: QueryRequest):
 @app.post("/extract-cases", response_model=CaseExtractionResponse)
 def extract_cases():
     return extract_all_cases()
+
+@app.post("/patterns")
+def patterns(request: PatternRequest):
+    try:
+        return analyze_patterns(request.question, request.top_k or 5)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc

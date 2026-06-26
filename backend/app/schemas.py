@@ -46,3 +46,7 @@ class CaseExtractionResponse(BaseModel):
     avg_tags_per_case: float
     output_path: str
     cases: List[BusinessCase]
+
+class PatternRequest(BaseModel):
+    question: str = Field(..., min_length=3)
+    top_k: Optional[int] = Field(default=5, ge=1, le=10)
